@@ -1,4 +1,4 @@
-# WebDevAssignment1
+# WebDevAssignment1 - Sami Sikkila
 
 # Introduction to Programming
 
