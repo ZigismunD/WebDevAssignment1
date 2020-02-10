@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style/stylesheet.css">
+        <link rel="stylesheet" href="style/contactStyle.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="Introduction to Programming">
+        <meta name="keywords" content="HTML,CSS">
+        <meta name="author" content="Sami Sikkila">
+        <title>Contact</title>
+    </head>
+    <body>
+        <div class="main">
+            <main>
+                <header>
+                    <img src="images/rt-avatar.png" class="profile-img" alt="Company logo">
+                    <nav>
+                        <ul>
+                            <li id="linkIndex"><a href="index.html">Home</a></li>
+                            <li id="linkAbout"><a href="about.html">About</a></li>
+                            <li id="linkLanguages"><a href="languages.html">Languages</a></li>
+                            <li id="linkContact"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <section id="about">
+                    <div class="section-inner">
+                        <h2>Contact</h2>
+                        <article id="formArticle">
+                            <h2>Fill the form</h2>
+                        <form action="MAILTO:ssikk605@mtroyal.ca?subject=Form" method="POST" enctype="text/plain">
+                            Highlighted fields are required!<br><br>
+                            Subject:<br>
+                            <input type="text" name="Subject" required><br>
+                            Text:<br>
+                            <textarea name="inquiry" cols="50" rows="5" required></textarea><br>
+                            Email:<br>
+                            <input type="email" name="email" placeholder="example@address.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  required><br>
+                            Phone:<br>
+                            <input type="tel" name="phone" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}"><br>
+                            <p> Is the inquiry urgent?<br>
+                                <label for = "urgentYes">Yes</label>
+                                <input type="radio" name="urgent" id="urgentYes" value="Yes">
+                                <label for = "urgentNo">No</label>
+                                <input type="radio" name="urgent" id="urgentNo" value="No" checked>
+                            </p>
+                            <p> Options:<br>
+                                <input type="checkbox" name="pamphlet" value="Pamphlet" id="pamphlet">
+                                <label for="pamphlet">Want pamphlet?</label><br>
+                                <input type="checkbox" name="reqAnswer" value="reqAnswer" id="reqAnswer">
+                                <label for="pamphlet">Do you require answer?</label><br>
+                            </p>
+                            <p>
+                                <input type="submit" value="Submit">
+
+                                <input type="reset" value="Reset">
+                            </p>
+                        </form>
+                    </article>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer>
+            Sami Sikkila
+        </footer>
+        
+    </body>
+</html>
