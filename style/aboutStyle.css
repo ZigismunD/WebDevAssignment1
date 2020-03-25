@@ -7,3 +7,23 @@ img#machine {
     float: right;
     height: 230px;
 }
+
+@media screen and (max-width: 700px) {
+    img#machine {
+        width: 250px;
+        height: 200px;
+        float: none;
+    }
+
+    .adaLovelace {
+        width: 300px;
+        height: 500px;
+    }
+
+    article {
+        width: 95%;
+        left: 5px;
+        font-size: 15px;
+    }
+
+}
