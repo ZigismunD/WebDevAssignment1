@@ -17,3 +17,36 @@ tbody tr:nth-child(1)
 {
   background: rgb(1, 213, 250);
 }
+
+@media screen and (min-width: 901px) and (max-width: 1500px) {
+    .picture {
+      width: 300px;
+    }
+
+    table {
+      width: 200px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+  article {
+      width: 95%;
+      left: 5px;
+      font-size: 12px;
+  }
+
+
+  .sidenav a{
+      font-size: xx-small;
+  }
+
+  .picture {
+    width: 100px;
+  }
+
+  table {
+    width: 80px;
+    align-self: center;
+  }
+}

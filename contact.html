@@ -30,26 +30,37 @@
                             <h2>Fill the form</h2>
                         <form action="MAILTO:ssikk605@mtroyal.ca?subject=Form" method="POST" enctype="text/plain">
                             Highlighted fields are required!<br><br>
-                            Subject:<br>
-                            <input type="text" name="Subject" required><br>
-                            Text:<br>
-                            <textarea name="inquiry" cols="50" rows="5" required></textarea><br>
-                            Email:<br>
-                            <input type="email" name="email" placeholder="example@address.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  required><br>
-                            Phone:<br>
-                            <input type="tel" name="phone" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}"><br>
-                            <p> Is the inquiry urgent?<br>
-                                <label for = "urgentYes">Yes</label>
-                                <input type="radio" name="urgent" id="urgentYes" value="Yes">
-                                <label for = "urgentNo">No</label>
-                                <input type="radio" name="urgent" id="urgentNo" value="No" checked>
-                            </p>
-                            <p> Options:<br>
-                                <input type="checkbox" name="pamphlet" value="Pamphlet" id="pamphlet">
-                                <label for="pamphlet">Want pamphlet?</label><br>
-                                <input type="checkbox" name="reqAnswer" value="reqAnswer" id="reqAnswer">
-                                <label for="pamphlet">Do you require answer?</label><br>
-                            </p>
+                            <fieldset>
+                                <legend>Message</legend>
+                                Subject:<br>
+                                <input type="text" name="Subject" required tabindex="1"><br>
+                                Text:<br>
+                                <textarea name="inquiry" cols="50" rows="5" required tabindex="2"></textarea><br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Contact Information</legend>
+                                    Email:<br>
+                                    <input type="email" name="email" placeholder="example@address.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  required tabindex="3"><br>
+                                    Phone:<br>
+                                    <input type="tel" name="phone" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" tabindex="4"><br>
+                                </fieldset>
+                                    <p> Is the inquiry urgent?<br>
+                                        <label for = "urgentYes">Yes</label>
+                                        <input type="radio" name="urgent" id="urgentYes" value="Yes">
+                                        <label for = "urgentNo">No</label>
+                                        <input type="radio" name="urgent" id="urgentNo" value="No" checked>
+                                    </p>
+                          
+                            <fieldset>
+                                <legend>Options</legend>
+                                <p> Options:<br>
+                                    <input type="checkbox" name="pamphlet" value="Pamphlet" id="pamphlet">
+                                    <label for="pamphlet">Want pamphlet?</label><br>
+                                    <input type="checkbox" name="reqAnswer" value="reqAnswer" id="reqAnswer">
+                                    <label for="reqAnswer">Do you require answer?</label><br>
+                                </p>
+                            </fieldset>
+                            
                             <p>
                                 <input type="submit" value="Submit">
 

@@ -26,4 +26,8 @@ img#machine {
         font-size: 15px;
     }
 
+    .sidenav a{
+        font-size: xx-small;
+    }
+
 }
