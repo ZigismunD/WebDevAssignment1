@@ -14,12 +14,15 @@ input:required, textarea:required {
 
 @media screen and (max-width: 900px) {
     article {
-        width: 90%;
-        left: 0px;
+        width: 450px;
         font-size: 12px;
     }
 
     #inquiry {
+        width: 300px;
+    }
+
+    #formArticle {
         width: 350px;
     }
 }
