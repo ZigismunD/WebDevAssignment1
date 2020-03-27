@@ -18,7 +18,7 @@ tbody tr:nth-child(1)
   background: rgb(1, 213, 250);
 }
 
-@media screen and (min-width: 901px) and (max-width: 1500px) {
+@media screen and (min-width: 901px) {
     .picture {
       width: 300px;
     }
