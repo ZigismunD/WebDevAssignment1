@@ -151,3 +151,22 @@ nav#insiteNav {
       padding-top: 10px;
       padding-bottom: 10px;
   }
+
+  @media screen and (min-width: 1200px) {
+      body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 100px;
+      }
+
+      #home {
+          grid-column: 1/3;
+      }
+
+      #contact {
+          grid-column: 1/3;
+      }
+    
+      
+  }
+  
